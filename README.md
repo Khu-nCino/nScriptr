@@ -11,7 +11,7 @@ To install the Chrome extension:
   </ul>
 </li>
 <li> Go to chrome://extensions/ </li>
-<li> Make sure "Developer mode" is enabled on the top right corner, click Load Unpacked, and select the folder containing nScriptr/nScriptr/dist/nScriptr. </li>
+<li> Make sure "Developer mode" is enabled on the top right corner, click Load Unpacked, and select nScriptr/nScriptr/dist/nScriptr. </li>
 </ol>
 
 To test if it's working, go to any page with google.com in the URL.
