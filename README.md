@@ -3,7 +3,7 @@
 To install the Chrome extension:
 1. In the terminal: 
    - cd into nScriptr/nScriptr
-   - Run `npm install@angular-builders/custom-webpack`
+   - Run `npm install @angular-builders/custom-webpack`
    - Run `ng build --watch --configuration=dev`
    - **Note: if this isn't running, the extension won't compile & you'll get a bunch of errors.**
 2. Go to `chrome://extensions/`
