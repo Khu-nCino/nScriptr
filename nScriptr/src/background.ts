@@ -6,5 +6,12 @@ chrome.runtime.onInstalled.addListener(() => {
 	  chrome.tabs.query({ active: true, currentWindow: true }, ([{ id }]) => {
 		 chrome.pageAction.show(id);
 	  });
-	}, { url: [{ urlMatches: 'google.com' }] });
+	  
+	}, { url: [
+		{ hostContains: 'google.com' },
+		{ hostContains: 'developer.chrome.com' },
+		{ hostContains: '.lightning.force.com' },
+		{ hostContains: '.cloudforce.com' },
+		{ hostContains: '.salesforce.com' }
+	] });
  });
