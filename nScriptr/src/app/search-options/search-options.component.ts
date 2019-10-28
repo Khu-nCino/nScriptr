@@ -2,12 +2,12 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
 
 @Component({
-  selector: 'app-options-panel',
-  templateUrl: './options-panel.component.html',
-  styleUrls: ['./options-panel.component.css']
+  selector: 'app-search-options',
+  templateUrl: './search-options.component.html',
+  styleUrls: ['./search-options.component.css']
 })
-export class OptionsPanelComponent implements OnInit {
-	
+export class SearchOptionsComponent implements OnInit {
+
 	@ViewChild('f', {static: false}) searchForm: NgForm;
 	keyword: string;
 	package: string;
@@ -46,3 +46,6 @@ export class OptionsPanelComponent implements OnInit {
 		chrome.storage.sync.set({ color});
 	}
 }
+
+
+
