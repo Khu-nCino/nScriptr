@@ -8,13 +8,15 @@ import { PopupComponent } from './popup/popup.component';
 import { FormsModule } from '@angular/forms';
 import { SearchOptionsComponent } from './search-options/search-options.component';
 import { SearchResultsComponent } from './search-results/search-results.component';
+import { ScriptDetailComponent } from './script-detail/script-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PopupComponent,
     SearchOptionsComponent,
-    SearchResultsComponent
+    SearchResultsComponent,
+    ScriptDetailComponent
   ],
   imports: [
     BrowserModule,
