@@ -1,0 +1,9 @@
+{
+    "name": "Add 1000 Fees to a Loan",
+    "object": ["Loan"],
+    "package": ["LLC_BI"],
+    "script": "Integer counter=0;List<LLC_BI__Fee__c>toInsert=new List<LLC_BI__Fee__c>();while(counter<1000){LLC_BI__Fee__c fee=new LLC_BI__Fee__c();fee.LLC_BI__Loan__c='Copy_and_Pasta_the_Loan_ID';fee.LLC_BI__Fee_Code__c='001';if(counter<100){fee.LLC_BI__Fee_Type__c='Appraisal'}else if(counter<200){fee.LLC_BI__Fee_Type__c='Attorney'}else if(counter<300){fee.LLC_BI__Fee_Type__c='Credit Report'}else if(counter<400){fee.LLC_BI__Fee_Type__c='DMV'}else if(counter<500){fee.LLC_BI__Fee_Type__c='Government Recording'}else if(counter<600){fee.LLC_BI__Fee_Type__c='Loan Origination'}else if(counter<700){fee.LLC_BI__Fee_Type__c='Survey'}else if(counter<800){fee.LLC_BI__Fee_Type__c='Title Insurance'}else if(counter<900){fee.LLC_BI__Fee_Type__c='Title Search'}else{fee.LLC_BI__Fee_Type__c='Other'}toInsert.add(fee);counter++}insert toInsert",
+    "description": "This script should be executed in the Developer Console with Execute Anonymous. The target loan's SFDC ID should be inserted into the 5th line of the code before execution.",
+    "id": 1, 
+    "variables": null
+}
