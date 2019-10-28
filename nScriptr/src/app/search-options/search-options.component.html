@@ -1,0 +1,73 @@
+<div class="content">
+		<form (ngSubmit)="search(f)" #f="ngForm">
+			<div class="form-group">
+				<div class="row">
+					<label for="keyword">Keyword</label>
+				</div>
+				<div class="row">
+					<input 
+						type="text"
+						id="keyword"
+						name="keyword"
+						class="field"
+						ngModel
+					/>
+				</div>
+			</div>
+	
+			<div class="form-group">
+				<div class="row">
+					<label for="package">Package</label>
+				</div>
+				<div class="row">
+					<select id="package" name="package" class="field" ngModel>
+							<option *ngFor="let package of packageList" [value]="package">{{package}}</option>
+					</select>
+				</div>
+			</div>
+	
+			<div class="form-group">
+				<div class="row">
+					<label for="object">Object</label>
+				</div>
+				<div class="row">
+					<select id="object" name="object" class="field" ngModel>
+						<option *ngFor="let object of objectList" [value]="object">{{object}}</option>
+					</select>
+				</div>
+			</div>
+	
+			<div class="form-group">
+				<div class="row">
+					<label for="namingConvention">Naming Convention</label>
+				</div>
+				<div class="row">
+					<input 
+						type="text"
+						id="namingConvention"
+						name="namingConvention"
+						class="field"
+						ngModel
+					/>
+				</div>
+			</div>
+	
+			<div class="row btnRow">
+				<button class="btn btn-primary btn-pull-right" type="submit" [disabled]="!f.valid">Search</button>
+			</div>
+		</form>
+	
+		<span [style.color]="color" 
+				[cpToggle]="true" 
+				[cpDialogDisplay]="'inline'" 
+				[cpPositionRelativeToArrow]="true"
+				[(colorPicker)]="color" 
+				[cpOKButtonText]="'Apply'" 
+				[cpOKButton]="true"
+				(colorPickerSelect)="colorize()"
+				(colorPickerChange)="updateColor($event)">
+		</span>
+	</div>
+	
+	
+	
