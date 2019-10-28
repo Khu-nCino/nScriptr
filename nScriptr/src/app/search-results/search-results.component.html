@@ -1,1 +1,13 @@
-<p>search-results works!</p>
+<div class="search-results">
+   <ol>
+      <li *ngFor="let script of scripts">
+         <div>
+            <p style="color: white">{{script.name}}</p>
+         </div>
+         <div>
+            <button>View</button>
+            <button>Run</button>
+         </div>
+      </li>
+   </ol>
+</div>
