@@ -1,13 +1,9 @@
 <div class="search-results">
-   <ol>
-      <li *ngFor="let script of scripts">
-         <div>
-            <p style="color: white">{{script.name}}</p>
-         </div>
-         <div>
-            <button>View</button>
-            <button>Run</button>
-         </div>
-      </li>
-   </ol>
+  <ol>
+    <li class="search-result text" *ngFor="let script of scripts">
+      {{script.name}}
+      <button class="btn btn-success button">Run</button>
+      <button class="btn btn-primary button" [routerLink]="['/script', script.id]">View</button>
+    </li>
+  </ol>
 </div>
