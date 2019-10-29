@@ -18,13 +18,8 @@ import { ScriptDetailComponent } from './script-detail/script-detail.component';
     SearchResultsComponent,
     ScriptDetailComponent
   ],
-  imports: [
-    BrowserModule,
-	 AppRoutingModule,
-	 ColorPickerModule,
-	 FormsModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, ColorPickerModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

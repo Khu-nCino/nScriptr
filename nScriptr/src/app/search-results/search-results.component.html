@@ -1,1 +1,9 @@
-<p>search-results works!</p>
+<div class="search-results">
+  <ol>
+    <li class="search-result text" *ngFor="let script of scripts">
+      {{script.name}}
+      <button class="btn btn-success button">Run</button>
+      <button class="btn btn-primary button" [routerLink]="['/script', script.id]">View</button>
+    </li>
+  </ol>
+</div>
