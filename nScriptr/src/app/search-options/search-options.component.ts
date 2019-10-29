@@ -1,6 +1,8 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
 
+import { DataStorageService } from '../data-storage.service';
+
 @Component({
   selector: 'app-search-options',
   templateUrl: './search-options.component.html',
@@ -19,7 +21,7 @@ export class SearchOptionsComponent implements OnInit {
 	objectList = ['Loan', 'Product Package', 'Entities'];
 	packageList = ['LLC_BI', 'nFORCE', 'nFUSE'];
 
-	constructor() { }
+	constructor(private storageService: DataStorageService) { }
 
 	ngOnInit(): void {
 		chrome.storage.sync.get('color', ({ color }) => {

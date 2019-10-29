@@ -9,6 +9,7 @@ import { FormsModule } from '@angular/forms';
 import { SearchOptionsComponent } from './search-options/search-options.component';
 import { SearchResultsComponent } from './search-results/search-results.component';
 import { ScriptDetailComponent } from './script-detail/script-detail.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,13 @@ import { ScriptDetailComponent } from './script-detail/script-detail.component';
     SearchResultsComponent,
     ScriptDetailComponent
   ],
-  imports: [BrowserModule, AppRoutingModule, ColorPickerModule, FormsModule],
+  imports: [
+   BrowserModule,
+	 AppRoutingModule,
+	 ColorPickerModule,
+	 FormsModule,
+	 HttpClientModule
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })
