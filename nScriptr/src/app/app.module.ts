@@ -20,7 +20,7 @@ import { HttpClientModule } from '@angular/common/http';
     ScriptDetailComponent
   ],
   imports: [
-    BrowserModule,
+   BrowserModule,
 	 AppRoutingModule,
 	 ColorPickerModule,
 	 FormsModule,
@@ -29,4 +29,4 @@ import { HttpClientModule } from '@angular/common/http';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

@@ -1,0 +1,16 @@
+.search-results {
+   width: 250px;
+   
+}
+
+.search-result {
+   padding-top: 5px;
+}
+
+.text {
+   color: white;
+}
+
+.button {
+   margin: 0px 5px;
+}
